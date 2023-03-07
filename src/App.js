@@ -8,7 +8,9 @@ const App = () => {
 
   const clickHandle = (index) => {
     let updatedBoard = [...squares];
-    if (playerTurn === "❌") {
+    if (squares[index] !== null){
+        alert('Please use another square')
+    }else if (playerTurn === "❌") {
       updatedBoard[index] = "❌";
       setSquares(updatedBoard);
       setPlayerTurn("⭕️");
