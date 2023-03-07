@@ -24,7 +24,12 @@ When creating a project it is important to think about organization of your code
     - update game state with updatedBoard
   - need an onClick to call that function, pass in index as a prop to the Square component
 
-- As a user, my partner can click on a square after me and see their mark.
+- ✅ As a user, my partner can click on a square after me and see their mark.
+
+  - set up a state variable playerTurn to determine whose turn it is (default to ❌)
+  - add a conditional statement to clickHandle to mark an ❌ if it is x turn, and ⭕️ if it is o turn
+  - add line of code to change state of playerTurn on each click
+
 - As a user, I can't click on a square that has already been marked.
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
 - As a user, I can't continue playing the game after the game has been won.
