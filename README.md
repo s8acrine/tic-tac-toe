@@ -7,6 +7,15 @@ When creating a project it is important to think about organization of your code
 ### 📚 User Stories
 
 - As a user, I can see a three by three grid game board on the page.
+
+  - Iterate squares to display square component for each element
+  - Use styling to set up grid
+  - setup a div for all boxes to be able to use flexbox
+  - assign a class to the div: **gameboard**
+  - use **flex-wrap: wrap** to wrap the game board
+  - set div width to 3x box width + border width + ~20 pixels of 'wiggle room'
+  - set font-size to 150 px and text-align to center
+
 - As a user, I can click on a square to mark it.
 - As a user, my partner can click on a square after me and see their mark.
 - As a user, I can't click on a square that has already been marked.

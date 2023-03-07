@@ -1,5 +1,86 @@
-.square {
-  border: 2px solid black;
-  height: 100px;
-  width: 100px;
+.square0 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-left: none;
+  border-top: none;
+  font-size: 150px;
+  text-align: center;
+}
+.square1 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-top: none;
+  font-size: 150px;
+  text-align: center;
+}
+.square2 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-top: none;
+  border-right: none;
+  font-size: 150px;
+  text-align: center;
+}
+.square3 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-left: none;
+  font-size: 150px;
+  text-align: center;
+}
+.square4 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  font-size: 150px;
+  text-align: center;
+}
+.square5 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-right: none;
+  font-size: 150px;
+  text-align: center;
+}
+.square6 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-left: none;
+  border-bottom: none;
+  font-size: 150px;
+  text-align: center;
+}
+.square7 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-bottom: none;
+  font-size: 150px;
+  text-align: center;
+}
+.square8 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-bottom: none;
+  border-right: none;
+  font-size: 150px;
+  text-align: center;
+}
+
+.gameBoard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
 }
