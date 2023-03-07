@@ -6,7 +6,7 @@ When creating a project it is important to think about organization of your code
 
 ### 📚 User Stories
 
-- As a user, I can see a three by three grid game board on the page.
+- ✅ As a user, I can see a three by three grid game board on the page.
 
   - Iterate squares to display square component for each element
   - Use styling to set up grid
@@ -17,6 +17,13 @@ When creating a project it is important to think about organization of your code
   - set font-size to 150 px and text-align to center
 
 - As a user, I can click on a square to mark it.
+
+  - need a clickHandle function
+    - let updatedBoard be set to the current board state using spread operator
+    - update clicked index using bracket notation
+    - update game state with updatedBoard
+  - need an onClick to call that function, pass in index as a prop to the Square component
+
 - As a user, my partner can click on a square after me and see their mark.
 - As a user, I can't click on a square that has already been marked.
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
