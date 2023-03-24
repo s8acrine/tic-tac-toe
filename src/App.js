@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Square from "./components/Square";
 import "./App.css";
+import ResetButton from "./components/ResetButton";
 
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null)); // Create an array of squares to use as the gameboard and fill each index of the array with null
@@ -61,10 +62,16 @@ const App = () => {
       setPlayerTurn("❌");
     }
   };
+  // Set squares, playerTurn, and winner to their starting state
+  const resetGame = () => {
+    setSquares(Array(9).fill(null));
+    setPlayerTurn("❌");
+    setWinner(null);
+  };
 
   return (
     <>
-      <h1>Tic Tac Toe</h1>
+      {winner === null && <h1>Welcome To Tic Tac Toe</h1>}
       {winner === "⭕️" && <h1>⭕️ wins</h1>}
       {winner === "❌" && <h1>❌ wins</h1>}
       {!squares.includes(null) && <h1>It's a Draw</h1>}
@@ -81,6 +88,7 @@ const App = () => {
             />
           );
         })}
+        <ResetButton resetGame={resetGame} />
       </div>
     </>
   );
