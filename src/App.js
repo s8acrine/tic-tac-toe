@@ -21,12 +21,14 @@ const App = () => {
   const clickHandle = (index) => {
     let updatedBoard = [...squares]; // set the current gamestate to a variable
 
+    // Function to determine if the current player has won
+    // Iterate through the array of winning combos and determine if any of a winning combo are all set to the same character
+    // If true, set the current player as the winner (as you can only win on your turn by placing the)
     const checkWinner = () => {
-      // check to see if the current player has won
       setSquares(updatedBoard); // update board state
       for (let i = 0; i < winningCombo.length; i++) {
         // iterate through each possible winning combination
-        const [a, b, c] = winningCombo[i];
+        let [a, b, c] = winningCombo[i];
         if (
           updatedBoard[a] &&
           updatedBoard[a] === updatedBoard[b] &&
@@ -38,6 +40,11 @@ const App = () => {
       }
     };
 
+    //Function to manage the marking of the board
+    // First checks to see if a winner has been declared, which prevents further markers
+    // Then checks to see if the selected square already has been marked, in which case it sends an alert to choose another square
+    // otherwhise checks the players turn and sets the value of the selected index to that icon
+    // TODO: change the handling of playerturn conditionals to a switch to reduce code complexity
     if (winner !== null) {
       return null;
     } else if (squares[index] !== null) {
