@@ -16,7 +16,7 @@ When creating a project it is important to think about organization of your code
   - set div width to 3x box width + border width + ~20 pixels of 'wiggle room'
   - set font-size to 150 px and text-align to center
 
-- As a user, I can click on a square to mark it.
+- ✅ As a user, I can click on a square to mark it. 
 
   - need a clickHandle function
     - let updatedBoard be set to the current board state using spread operator
@@ -30,7 +30,7 @@ When creating a project it is important to think about organization of your code
   - add a conditional statement to clickHandle to mark an ❌ if it is x turn, and ⭕️ if it is o turn
   - add line of code to change state of playerTurn on each click
 
-- As a user, I can't click on a square that has already been marked.
+- ✅ As a user, I can't click on a square that has already been marked.
 
     - add conditional to clickHandle to check if square is alreaby filled alert user
 

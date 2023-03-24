@@ -1,3 +1,10 @@
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
 .square {
   height: 200px;
   width: 200px;
@@ -33,13 +40,19 @@
 .gameBoard {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 620px;
   margin: 0 auto;
 }
 
-h1 {
-  text-align: center;
-}
-h2 {
-  text-align: center;
+#resetButton {
+  background-color: whitesmoke;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 24px;
+  margin-top: 10%;
 }
